@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO: React.FC<Props> = (props) => {
+const Seo: React.FC<Props> = (props) => {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -126,4 +126,4 @@ type Props = {
   image?: string;
 };
 
-export default SEO;
+export default Seo;
