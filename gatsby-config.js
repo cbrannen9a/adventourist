@@ -17,7 +17,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    "gatsby-plugin-react-leaflet",
+    { resolve: "gatsby-plugin-react-leaflet", options: { linkStyles: true } },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
