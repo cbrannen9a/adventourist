@@ -8,6 +8,7 @@
   "dependencies": {
     "@types/react-helmet": "^6.0.0",
     "@types/react-leaflet": "^2.5.2",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.23.10",
     "gatsby-image": "^2.4.8",
     "gatsby-plugin-manifest": "^2.4.13",

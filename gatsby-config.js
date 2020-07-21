@@ -1,3 +1,4 @@
+require("dotenv").config();
 const config = require("./package.json");
 
 module.exports = {
@@ -18,6 +19,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     { resolve: "gatsby-plugin-react-leaflet", options: { linkStyles: true } },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "GCMS",
+        fieldName: "gcms",
+        url: process.env.GATSBY_GRAPHQL_CMS,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
